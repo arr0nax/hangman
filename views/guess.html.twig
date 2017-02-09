@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+  </head>
+  <body>
+  <h2> Current word = {{hangman.getWordBlanks}} </h2>
+  <h2> Guessed letters = {{hangman.getGuess}} </h2>
+  <h2> Matched letters = {{hangman.getSolution}} </h2>
+    <form class="guessWord" action="/guess" method="post">
+       <input type="text" name="guess" value="">
+       <button type="submit" name="button">Submit Letter Guess</button>
+    </form>
+    <form class="restart" action="/restart" method="post">
+       <button type="submit" name="button">restart</button>
+    </form>
+
+  </body>
+</html>
