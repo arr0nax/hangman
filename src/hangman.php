@@ -47,9 +47,9 @@
     }
 
     function guessWord($letter) {
-      preg_match('/('.$letter.')+/', $this->word, $matches);
+      preg_match('/('.$letter.')/', $this->word, $matches);
       for ($i;$i < count($matches);$i++) {
-        $this->solution .= $matches[$i][0];
+        $this->solution .= $matches[$i][1];
       }
     }
   }
